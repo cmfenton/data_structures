@@ -444,7 +444,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 468);
+            this.ClientSize = new System.Drawing.Size(831, 395);
             this.Controls.Add(this.lblOption);
             this.Controls.Add(this.optionDataGridView);
             this.Controls.Add(this.lblQuestion);
