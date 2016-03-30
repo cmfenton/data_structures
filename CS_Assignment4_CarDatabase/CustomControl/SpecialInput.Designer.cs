@@ -37,9 +37,11 @@ namespace CustomControl
             // 
             // lblVin
             // 
+            this.lblVin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblVin.AutoSize = true;
-            this.lblVin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblVin.Location = new System.Drawing.Point(4, 6);
+            this.lblVin.ForeColor = System.Drawing.Color.Blue;
+            this.lblVin.Location = new System.Drawing.Point(-3, 6);
+            this.lblVin.Margin = new System.Windows.Forms.Padding(0);
             this.lblVin.Name = "lblVin";
             this.lblVin.Size = new System.Drawing.Size(25, 13);
             this.lblVin.TabIndex = 0;
@@ -47,7 +49,7 @@ namespace CustomControl
             // 
             // txtbxVin
             // 
-            this.txtbxVin.Location = new System.Drawing.Point(35, 3);
+            this.txtbxVin.Location = new System.Drawing.Point(27, 3);
             this.txtbxVin.Name = "txtbxVin";
             this.txtbxVin.Size = new System.Drawing.Size(121, 20);
             this.txtbxVin.TabIndex = 1;
@@ -60,7 +62,7 @@ namespace CustomControl
             this.Controls.Add(this.txtbxVin);
             this.Controls.Add(this.lblVin);
             this.Name = "SpecialInput";
-            this.Size = new System.Drawing.Size(161, 27);
+            this.Size = new System.Drawing.Size(151, 25);
             this.ResumeLayout(false);
             this.PerformLayout();
 

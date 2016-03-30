@@ -11,14 +11,14 @@ namespace Event
         public delegate void LimitHandler(String txt);
         public LimitHandler handler;
 
-        public void handle(bool value)
+        public void handle()
         {
-            message(value);
+            message();
         }
 
-        public void message(bool value)
+        public void message()
         {
-            handler("Input Exceeded the Allowed Limit");
+            handler("Input Exceeded the Allowed Limit");          
         }
     }
 }

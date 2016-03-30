@@ -16,22 +16,28 @@ namespace CarForm
         {
             InitializeComponent();
         }
-        TextLimit textLimit = new TextLimit();
+        TextLimit errorHandler = new TextLimit();
 
         private void Form_Load(object sender, EventArgs e)
         {
-            textLimit.handler += fire;
+            errorHandler.handler += showError;
             specialInputVIN.textLimit += textLimitReached;
         }
 
         public void textLimitReached(object sender, EventArgs e)
         {
-            textLimit.handle(true);
+            errorHandler.handle();
         }
 
-        public void fire(String data)
+        public void showError(String data)
         {
-            MessageBox.Show(data);
+            if (!specialInputVIN.valid)
+            {
+                MessageBox.Show(data);
+
+                //disable buttons
+
+            }
         }
     }
 }
