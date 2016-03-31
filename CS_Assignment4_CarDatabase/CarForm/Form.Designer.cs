@@ -35,6 +35,13 @@
             this.lblLanguage = new System.Windows.Forms.Label();
             this.cbxLanguage = new System.Windows.Forms.ComboBox();
             this.gbxCar = new System.Windows.Forms.GroupBox();
+            this.txtbxTonnage = new System.Windows.Forms.TextBox();
+            this.lblTonnage = new System.Windows.Forms.Label();
+            this.txtbxAxles = new System.Windows.Forms.TextBox();
+            this.lblAxles = new System.Windows.Forms.Label();
+            this.specialInputVIN = new CustomControl.SpecialInput();
+            this.txtbxTrimCode = new System.Windows.Forms.TextBox();
+            this.lblTrimCode = new System.Windows.Forms.Label();
             this.cbxType = new System.Windows.Forms.ComboBox();
             this.txtbxYear = new System.Windows.Forms.TextBox();
             this.txtbxMake = new System.Windows.Forms.TextBox();
@@ -43,13 +50,6 @@
             this.lblYear = new System.Windows.Forms.Label();
             this.lblMake = new System.Windows.Forms.Label();
             this.lblModel = new System.Windows.Forms.Label();
-            this.lblTrimCode = new System.Windows.Forms.Label();
-            this.txtbxTrimCode = new System.Windows.Forms.TextBox();
-            this.specialInputVIN = new CustomControl.SpecialInput();
-            this.lblAxles = new System.Windows.Forms.Label();
-            this.txtbxAxles = new System.Windows.Forms.TextBox();
-            this.lblTonnage = new System.Windows.Forms.Label();
-            this.txtbxTonnage = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -94,9 +94,9 @@
             this.lblLanguage.AutoSize = true;
             this.lblLanguage.Location = new System.Drawing.Point(13, 25);
             this.lblLanguage.Name = "lblLanguage";
-            this.lblLanguage.Size = new System.Drawing.Size(55, 13);
+            this.lblLanguage.Size = new System.Drawing.Size(43, 13);
             this.lblLanguage.TabIndex = 1;
-            this.lblLanguage.Text = "Language";
+            this.lblLanguage.Text = "Langue";
             // 
             // cbxLanguage
             // 
@@ -132,6 +132,66 @@
             this.gbxCar.TabIndex = 3;
             this.gbxCar.TabStop = false;
             this.gbxCar.Text = "Car";
+            // 
+            // txtbxTonnage
+            // 
+            this.txtbxTonnage.Location = new System.Drawing.Point(272, 121);
+            this.txtbxTonnage.Name = "txtbxTonnage";
+            this.txtbxTonnage.Size = new System.Drawing.Size(121, 20);
+            this.txtbxTonnage.TabIndex = 18;
+            // 
+            // lblTonnage
+            // 
+            this.lblTonnage.AutoSize = true;
+            this.lblTonnage.ForeColor = System.Drawing.Color.Red;
+            this.lblTonnage.Location = new System.Drawing.Point(213, 124);
+            this.lblTonnage.Name = "lblTonnage";
+            this.lblTonnage.Size = new System.Drawing.Size(50, 13);
+            this.lblTonnage.TabIndex = 17;
+            this.lblTonnage.Text = "Tonnage";
+            // 
+            // txtbxAxles
+            // 
+            this.txtbxAxles.Location = new System.Drawing.Point(272, 88);
+            this.txtbxAxles.Name = "txtbxAxles";
+            this.txtbxAxles.Size = new System.Drawing.Size(121, 20);
+            this.txtbxAxles.TabIndex = 16;
+            // 
+            // lblAxles
+            // 
+            this.lblAxles.AutoSize = true;
+            this.lblAxles.ForeColor = System.Drawing.Color.Red;
+            this.lblAxles.Location = new System.Drawing.Point(231, 91);
+            this.lblAxles.Name = "lblAxles";
+            this.lblAxles.Size = new System.Drawing.Size(32, 13);
+            this.lblAxles.TabIndex = 15;
+            this.lblAxles.Text = "Axles";
+            // 
+            // specialInputVIN
+            // 
+            this.specialInputVIN.limit = 12;
+            this.specialInputVIN.Location = new System.Drawing.Point(245, 17);
+            this.specialInputVIN.Name = "specialInputVIN";
+            this.specialInputVIN.Size = new System.Drawing.Size(151, 25);
+            this.specialInputVIN.TabIndex = 14;
+            this.specialInputVIN.valid = true;
+            // 
+            // txtbxTrimCode
+            // 
+            this.txtbxTrimCode.Location = new System.Drawing.Point(272, 55);
+            this.txtbxTrimCode.Name = "txtbxTrimCode";
+            this.txtbxTrimCode.Size = new System.Drawing.Size(121, 20);
+            this.txtbxTrimCode.TabIndex = 13;
+            // 
+            // lblTrimCode
+            // 
+            this.lblTrimCode.AutoSize = true;
+            this.lblTrimCode.ForeColor = System.Drawing.Color.Teal;
+            this.lblTrimCode.Location = new System.Drawing.Point(214, 58);
+            this.lblTrimCode.Name = "lblTrimCode";
+            this.lblTrimCode.Size = new System.Drawing.Size(52, 13);
+            this.lblTrimCode.TabIndex = 12;
+            this.lblTrimCode.Text = "TrimCode";
             // 
             // cbxType
             // 
@@ -206,66 +266,6 @@
             this.lblModel.TabIndex = 4;
             this.lblModel.Text = "Model";
             // 
-            // lblTrimCode
-            // 
-            this.lblTrimCode.AutoSize = true;
-            this.lblTrimCode.ForeColor = System.Drawing.Color.Teal;
-            this.lblTrimCode.Location = new System.Drawing.Point(214, 58);
-            this.lblTrimCode.Name = "lblTrimCode";
-            this.lblTrimCode.Size = new System.Drawing.Size(52, 13);
-            this.lblTrimCode.TabIndex = 12;
-            this.lblTrimCode.Text = "TrimCode";
-            // 
-            // txtbxTrimCode
-            // 
-            this.txtbxTrimCode.Location = new System.Drawing.Point(272, 55);
-            this.txtbxTrimCode.Name = "txtbxTrimCode";
-            this.txtbxTrimCode.Size = new System.Drawing.Size(121, 20);
-            this.txtbxTrimCode.TabIndex = 13;
-            // 
-            // specialInputVIN
-            // 
-            this.specialInputVIN.limit = 12;
-            this.specialInputVIN.Location = new System.Drawing.Point(245, 17);
-            this.specialInputVIN.Name = "specialInputVIN";
-            this.specialInputVIN.Size = new System.Drawing.Size(151, 25);
-            this.specialInputVIN.TabIndex = 14;
-            this.specialInputVIN.valid = true;
-            // 
-            // lblAxles
-            // 
-            this.lblAxles.AutoSize = true;
-            this.lblAxles.ForeColor = System.Drawing.Color.Red;
-            this.lblAxles.Location = new System.Drawing.Point(231, 91);
-            this.lblAxles.Name = "lblAxles";
-            this.lblAxles.Size = new System.Drawing.Size(32, 13);
-            this.lblAxles.TabIndex = 15;
-            this.lblAxles.Text = "Axles";
-            // 
-            // txtbxAxles
-            // 
-            this.txtbxAxles.Location = new System.Drawing.Point(272, 88);
-            this.txtbxAxles.Name = "txtbxAxles";
-            this.txtbxAxles.Size = new System.Drawing.Size(121, 20);
-            this.txtbxAxles.TabIndex = 16;
-            // 
-            // lblTonnage
-            // 
-            this.lblTonnage.AutoSize = true;
-            this.lblTonnage.ForeColor = System.Drawing.Color.Red;
-            this.lblTonnage.Location = new System.Drawing.Point(213, 124);
-            this.lblTonnage.Name = "lblTonnage";
-            this.lblTonnage.Size = new System.Drawing.Size(50, 13);
-            this.lblTonnage.TabIndex = 17;
-            this.lblTonnage.Text = "Tonnage";
-            // 
-            // txtbxTonnage
-            // 
-            this.txtbxTonnage.Location = new System.Drawing.Point(272, 121);
-            this.txtbxTonnage.Name = "txtbxTonnage";
-            this.txtbxTonnage.Size = new System.Drawing.Size(121, 20);
-            this.txtbxTonnage.TabIndex = 18;
-            // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(420, 74);
@@ -274,6 +274,7 @@
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
@@ -283,6 +284,7 @@
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSearch
             // 
@@ -292,6 +294,7 @@
             this.btnSearch.TabIndex = 6;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnExit
             // 
@@ -301,6 +304,7 @@
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form
             // 

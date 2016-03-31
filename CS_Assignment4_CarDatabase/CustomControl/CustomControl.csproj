@@ -53,6 +53,7 @@
     <Compile Include="SpecialInput.Designer.cs">
       <DependentUpon>SpecialInput.cs</DependentUpon>
     </Compile>
+    <Compile Include="TextLimit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

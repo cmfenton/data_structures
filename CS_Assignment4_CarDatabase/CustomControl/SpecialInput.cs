@@ -14,11 +14,14 @@ namespace CustomControl
 
         public int limit { get; set; }
         public bool valid { get; set; }
+        public override string Text { get; set; }
         public EventHandler textLimit;      
 
         //checks if the text goes over the limit
         private void txtbxVin_TextChanged(object sender, EventArgs e)
         {
+            Text = txtbxVin.Text;
+
             if (txtbxVin.Text.Length > limit)
             {
                 this.valid = false;
@@ -27,8 +30,9 @@ namespace CustomControl
             }
             else
             {
+                this.valid = true;
                 txtbxVin.BackColor = System.Drawing.SystemColors.Window;
-                this.valid = true;                
+                textLimit(sender, e);
             }
         }
     }
