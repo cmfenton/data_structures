@@ -12,7 +12,7 @@ namespace DB
     {
         public Table<Car> cars;
 
-        public Db() : base(@"Data Source=(localdb)\ProjectsV12;Initial Catalog=Car;Integrated Security=True")
+        public Db() : base(@"Data Source=(localdb)\ProjectsV12;Initial Catalog=Cars;Integrated Security=True")
         {
 
         }

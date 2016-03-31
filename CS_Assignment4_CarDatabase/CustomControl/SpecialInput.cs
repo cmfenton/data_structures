@@ -35,5 +35,10 @@ namespace CustomControl
                 textLimit(sender, e);
             }
         }
+
+        public void ClearTxt()
+        {
+            txtbxVin.Text = "";
+        }
     }
 }
